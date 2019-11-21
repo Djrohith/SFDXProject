@@ -5,8 +5,7 @@
 <members>Lead-Lead Layout</members>
         <name>Layout</name>
 </types>
-    <types>
-        <members>AccountController</members>
+    <types>        
         <members>ContactController</members>
         <name>ApexClass</name>
     </types>
