@@ -119,7 +119,7 @@
 </target>
 	
 <target name="VALIDATE">
-	<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" checkOnly="true" deployRoot=""/force-app/main/default/" maxPoll="${sf.maxPoll}" testLevel="RunLocalTests"/>
+	<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" checkOnly="true" deployRoot="/force-app/main/default/" maxPoll="${sf.maxPoll}" testLevel="RunLocalTests"/>
 </target>
 
 <target name="DEPLOY">
