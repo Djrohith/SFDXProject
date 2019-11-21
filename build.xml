@@ -113,4 +113,16 @@
     <target name="describeMetadata">
       <sf:describeMetadata username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}"/>
     </target>
+	
+	<target name="RETRIEVE">
+	<sf:retrieve username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}"  retrieveTarget="D:\salesforce_ant_46.0\sample\mypkg" unpackaged="D:\salesforce_ant_46.0\sample\mypkg\package.xml" unzip = "true"/>
+</target>
+	
+<target name="VALIDATE">
+	<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" checkOnly="true" deployRoot="D:\salesforce_ant_46.0\sample\mypkg" maxPoll="${sf.maxPoll}" testLevel="RunLocalTests"/>
+</target>
+
+<target name="DEPLOY">
+	<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="D:\salesforce_ant_46.0\sample\mypkg" maxPoll="${sf.maxPoll}"/>
+</target> 
 </project>
